@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cucumber Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Cucumber Tests(failed)">
+    <classes>
+      <class name="com.QATesting.runner.QARunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1 3 4"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.QATesting.runner.QARunner -->
+      <class name="com.QATesting.runner.QARunnerDD">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.QATesting.runner.QARunnerDD -->
+    </classes>
+  </test> <!-- Cucumber Tests(failed) -->
+</suite> <!-- Failed suite [Cucumber Suite] -->
